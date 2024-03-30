@@ -38,7 +38,7 @@ import {
         await page.locator(password).fill(process.env.PASSWORDINCORECT!);
         await page.locator(logginButton).click();
         await expect(page.locator(errorMessageLocator)).toBeAttached();
-        await expect(page.locator(errorMessageLocator)).toContainText('Your username is invalid!');
+        await expect(page.locator(errorMessageLocator)).toContainText('Your password is invalid!');
       }); 
 
       test("Test 3 : Test invalid login wrong username and password", async ({
@@ -84,7 +84,7 @@ import {
         await expect(page).toHaveTitle(landingPageTitle);
 
         await page.locator(username).fill(process.env.USERNAMECORECT!);
-        await page.locator(password).fill(process.env.PASSWORDINCORECT!);
+        await page.locator(password).fill(process.env.PASSWORDCORECT!);
         await page.locator(logginButton).click();
         expect(page).toHaveTitle(userPageTitle);
         await expect(page.locator(loginMessageLocator)).toBeAttached();
@@ -103,7 +103,7 @@ import {
         await expect(page).toHaveTitle(landingPageTitle);
 
         await page.locator(username).fill(process.env.USERNAMECORECT!);
-        await page.locator(password).fill(process.env.PASSWORDINCORECT!);
+        await page.locator(password).fill(process.env.PASSWORDCORECT!);
         await page.locator(logginButton).click();
         expect(page).toHaveTitle(userPageTitle);
         await expect(page.locator(loginMessageLocator)).toBeAttached();

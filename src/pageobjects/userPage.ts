@@ -1,3 +1,3 @@
-export const userPageTitle = 'Secure Area';
+export const userPageTitle = 'The Internet';
 export const loginMessageLocator='//div[@id="flash"]'
-export const logoutButton ='css=button'
+export const logoutButton ='//*[contains(text(),"Logout")]'
