@@ -1,0 +1,17 @@
+{
+  "strings":
+  [
+      {
+        "string": "(if (zero? x) max (/ 1 x))"
+      },
+      {
+        "string": "• I told him (that it’s not (yet) done). (But he wasn’t listening)"
+      },
+      {
+        "string": "())( "
+      },
+      {
+        "string": "•:-)"
+      }
+    ]
+}

@@ -1,0 +1,5 @@
+export const landingPageTitle = 'Login Page'
+export const username ='//input[@id="username"]'
+export const errorMessageLocator='//div[@id="flash"]'
+export const password='//input[@id="password"]'
+export const logginButton='//button[@type="submit"]'
